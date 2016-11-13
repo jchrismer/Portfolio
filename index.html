@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <title>Joseph Chrismer Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/w3.css" type="text/css"/>
+    <link rel="stylesheet" href="css/ProjButtons.css" type="text/css">
+    
+
+
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+        body, html {
+            height: 100%;
+            color: #777;
+            line-height: 1.8;
+        }
+
+        /* Create a Parallax Effect */
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+            opacity: 0.9;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* First image (Logo. Full height) */
+        .bgimg-1 {
+            background-image: url('assets/images/Main_header1.jpg');
+            min-height: 89%;
+        }
+
+        .w3-wide {letter-spacing: 10px;}
+        .w3-hover-opacity {cursor: pointer;}
+
+        /* Turn off parallax scrolling for tablets and mobiles */
+        @media only screen and (max-width: 1024px) {
+            .bgimg-1, .bgimg-2, .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+    <body>
+
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <ul class="w3-navbar" id="myNavbar">
+                <li><a href="#" class="w3-padding-large">HOME</a></li>
+                <li><a href="#about" class="w3-padding-large">ABOUT</a></li>
+                <li><a href="#project" class="w3-padding-large">PROJECTS</a></li>                
+            </ul>
+        </div>
+
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-display-container">
+            <div class="w3-display-middle" style="white-space:nowrap;">
+                <h1 class="w3-center" style="color: black; opacity: .9; font-weight: 400 ">Joseph Chrismer</h1>
+                
+                <!-- Todo: Add personal brand statement  <p class="w3-center" style="color: black; opacity: 1"> text </p> -->                
+            </div>
+        </div>
+
+        <!-- Container (About Section) MAKE clickable and have it move to "slowly"-->
+        <div class="w3-container w3-blue-grey" id="about">
+            <h3 class="w3-center">ABOUT</h3>
+            <hr style="opacity: .2"/>
+            <div class="w3-row">
+                <div class="w3-col m6 w3-center w3-section">
+                    <p><b>Joseph</b></p><br>
+                    <img src="assets/images/Portfolio_Portrait.jpg" alt="Photo of Me" style="width:40%;height:40%;">                    
+                    <p> email: <b>joseph.chrismer@gmail.com</b> </p>
+                </div>
+
+                <!-- Hide this text on small devices -->
+                <div class="w3-col m6 w3-section">
+                    <p style="padding: 2cm 0 0 0">My biggest passion in life has always been mathematics. At 15 I realized I could use math to express my thoughts better than the written word. Wanting to further mature my abilities I received a bachelors in mathematics. My education gave me the practical skills and the flexibility to be successful in a wide range of fields.</p>
+                    <p>Robotics and control have been the most satisfying application of my skills. I am left with total excitement and wonder imagining the possibilities of computers which can sense and see the world. A future with intelligent cars aiding their drivers, hardware that can augment human vision and UAVs which gracefully navigate the sky. I know this is the future I wish to contribute to. Every project hosted here will be things that I have done, not for school or work, but on behalf of my own curiosity and natural desire to learn more.</p>                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Container (Project Section) -->
+        <div class="w3-container w3-blue-grey" id="project">
+            <h3 class="w3-center">PROJECTS</h3>
+            <hr style="opacity: .2"/>
+
+            <!-- image 1 -->
+            <div class="w3-row-padding">
+                <div class="w3-third w3-container w3-margin-bottom">
+                    <div class = "proj_display">
+                        <a href="pages/KF_fusion.html">
+			<figure><img src="assets/images/KF_Thmb.JPG" height="250" width="100%"></figure>
+                        </a>
+                        <a href="pages/KF_fusion.html" class="box">
+                            <h2><span>Kalman Filter Attitude Estimation  </span></h2>
+                            <h3>Quaternion based Unscented and Extended Kalman Filter 
+                                for 3D orientation estimation using an IMU and magenetometer.</h3>
+                        </a>
+                    </div>
+                </div>
+                <!-- image 2 -->
+                <div class="w3-third w3-container w3-margin-bottom">
+                    <div class = "proj_display">
+                        <a href="pages/Calib_page.html">
+                            <figure><img src="assets/images/CalibThm.JPG" height="250" width="100%"></figure>
+                        </a>
+                        <a href="pages/Calib_page.html" class="box">
+                            <h2><span>MARG Sensor Calibration</span></h2>
+                            <h3>Full Magnetometer calibration using ellipsoid 
+                                fitting and accelerometer and gyroscope calibration.</h3>
+                        </a>
+                    </div>
+                </div>
+                <!-- image 3-->
+                <div class="w3-third w3-container w3-margin-bottom">
+                    <div class = "proj_display">
+                        <a href="pages/Speed_Sign_page.html">
+                        <figure><img src="assets/images/SignDemo_1.jpg" height="250" ></figure>
+                        </a>
+                            <a href="pages/Speed_Sign_page.html" class="box">
+                                <h2><span>US speed limit sign detector</span> </h2>
+                                <h3>Automatic US speed limit sign detection and labeling using computer vision and a convolutional neural network.</h3>
+                            </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-0">
+            <a href="https://github.com/jchrismer" target="_blank" class="w3-hover-black w3-xlarge w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-github"></i></a>            
+            <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
+        </footer>
+
+    </body>
+</html>
+

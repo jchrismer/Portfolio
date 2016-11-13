@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Joseph Chrismer | IMU calibration full</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/w3.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/ProjInfo.css" type="text/css">        
+    </head>
+    <body>                
+    <div id="main-column">
+        <div class="w3-top">
+            <ul class="w3-navbar" id="myNavbar">
+                <li><a href="../index.html#project" style ="background-color: #f1f1f1;" class="w3-padding-large" >BACK</a></li>                
+            </ul>
+        </div>  
+
+    <div id="splash"  style="background-image: url(../assets/images/CalibThm.JPG);">
+    </div>
+    <div id="article">
+      <p> As part of another project, I needed an effictive calibration routine for a MEMS gyroscope, magnetometer and accelerometer. I implemented a routine which can calibrate an accelerometer
+      and gyroscope for bias, scale factors and non-orthagonality. The routine is simple to use and does not require any tools to administer. The magnetometer has hard iron and soft iron
+      distortions compensated using ellipsoid fitting. Lastly I also implemented a magnetometer bias calibration routine for automatic and real time hard iron compensation.</p>
+      <p> Source code can be fond on <a href="https://github.com/jchrismer/PiQuad/tree/master/Calibration" target="_blank" style="color: rgb(0,0,255)">the project on github.</a> A write up can be found at <a href="http://aerialarithmetic.blogspot.com/2016/10/accelerometer-and-gyroscope-calibration.html" target="_blank" style="color: rgb(0,0,255)"> my project blog </a> </p>
+    </div>
+        
+  </div>
+    </body>
+</html>

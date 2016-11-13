@@ -1,0 +1,103 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 26, 2016, 2:08:18 PM
+    Author     : joseph
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+h1,
+h1+p {
+	margin: 0 0 0;
+	font-weight: 300;
+}
+h1+p a {
+	color: #333;
+}
+
+h1+p a:hover {
+	text-decoration: none;
+}
+h2 {
+	margin: 10px 5px 0;
+	padding: 0;
+	font-weight: 300;
+}
+h2 span {
+	margin-left: .1em;
+	color: #777;
+	font-size: 100%;
+}
+figure {
+        
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+/* Image mouse over animation while mouse is away (recovery)*/
+.proj_display figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+/* Image mouse over animation while mouse is over (action)*/
+.proj_display:hover figure img {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);     
+}
+
+
+a {
+  color: #f06d06;
+  text-decoration: none;
+}
+/* Text box under the images 'bump' when image is moused over*/
+.box {
+  padding: 2em;
+  border: 1px solid #ccc;
+  display: block;
+  width: 100%;
+  height: 100%;
+  float: left;
+  margin: 0 0 0 0;
+  color: black;
+  background: linear-gradient(
+     white, white 50%, #333 50%, #333
+  );
+  background-size: 100% 202%;
+  transition: all 0.2s ease;
+}
+.box h2 {
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  line-height: 1.2;
+}
+.box h3 {
+  font: 1em "Lucida Grande", serif;
+}
+
+.proj_display:hover .box {
+  background-position: 100% 100%;  
+}
+.proj_display:hover .box h2 {
+  color: #48ad26;
+}
+.proj_display:hover .box h2 span {
+  color: white;
+}
+.proj_display:hover .box h3 {
+  color: #48ad26;
+}
